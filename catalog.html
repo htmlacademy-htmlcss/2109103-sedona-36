@@ -52,6 +52,78 @@
       </ul>
     </header>
 
+    <section class="catalog-filters">
+      <h2 class="visually-hidden">Список фильтров</h2>
+      <form action="https://echo.htmlacademy.ru/" class="catalog-filter">
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Инфраструктура</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="pool" checked>
+
+                Бассейн
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="parking" checked>
+
+                Парковка
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="checkbox" name="wi-fi">
+
+                Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Тип жилья</legend>
+          <ul class="catalog-filter-list">
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="hotel-group" value="hotel" checked>
+
+                Гостиница
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="hotel-group" value="motel">
+
+                Мотель
+              </label>
+            </li>
+            <li class="catalog-filter-item">
+              <label class="control">
+                <input class="control-input" type="radio" name="hotel-group" value="apartments">
+
+                Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="catalog-filter-group">
+          <legend class="catalog-filter-title">Стоимость, Р:</legend>
+          <input class="control-input" type="text" placeholder="0 от">
+          <input class="control-input" type="text" placeholder="9000 до">
+          <input class="control-ipnut" type="range" min="0" max="9000" step="1" value="8000">
+        </fieldset>
+
+        <button type="submit" class="button button-active">Применить</button>
+        <button type="reset" class="button button-reset">Сбросить</button>
+      </form>
+    </section>
+
+  </main>
+
   <footer class="page-footer">
     <section class="footer-social">
       <h2 class="visually-hidden">Социальные сети</h2>
