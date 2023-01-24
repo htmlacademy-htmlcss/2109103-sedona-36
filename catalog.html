@@ -44,7 +44,7 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a href="index.html" class="breadcrumbs-link"><span class="visually-hidden">Главная</span></a>
+          <a href="index.html" class="breadcrumbs-link"><span class="visually-hidden">Главная.</span></a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -53,7 +53,7 @@
     </header>
 
     <section class="catalog-filters">
-      <h2 class="visually-hidden">Список фильтров</h2>
+      <h2 class="visually-hidden">Список фильтров.</h2>
       <form action="https://echo.htmlacademy.ru/" class="catalog-filter">
 
         <fieldset class="catalog-filter-group">
@@ -124,20 +124,28 @@
 
     <section class="catalog-hotels">
       <h2 class="catalog-hotels-title">Найдено гостиниц: <span class="catalog-hotels-amount">38</span></h2>
-      <select class="catalog-hotels-select-control" aria-lebel="Сортировка">
+      <select class="catalog-hotels-select-control" aria-label="Сортировка">
         <option value="cheap" selected>Сначала дешевые</option>
         <option value="expensive">Сначала дорогие</option>
         <option value="popular">Сначала популярные</option>
       </select>
-      <a href="#" class="button button-outlined">
-        <span class="visually-hidden">Показать карточки</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать слайдером</span>
-      </a>
-      <a href="#" class="button">
-        <span class="visually-hidden">Показать список</span>
-      </a>
+      <ul class="catalog-hotels-display">
+        <li class="hotels-display-item">
+          <a href="#" class="button button-outlined">
+            <span class="visually-hidden">Показать карточки.</span>
+          </a>
+        </li>
+        <li class="hotels-display-item">
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать слайдером.</span>
+          </a>
+        </li>
+        <li class="hotels-display-item">
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать список.</span>
+          </a>
+        </li>
+      </ul>
 
     <ul class="hotel-list">
       <li class="hotel-card">
@@ -147,12 +155,10 @@
         </a>
         <span class="hotel-card-category">Гостиница</span>
         <b class="hotel-card-price">от 4000 Р</b>
-        <a class="button" href="#">Подробнее</a>
-        <button class="button" href="#">Избранное</button>
+        <a class="button card-button-more" href="#">Подробнее</a>
+        <button class="button hotel-card-button-favorite">Избранное</button>
         <span class="hotel-card-stars"></span>
-        <a class="hotel-card-review" href="#">
-          <span class="hotel-card-review-description">Рейтинг: 8,5</span>
-        </a>
+        <span class="hotel-card-review">Рейтинг: 8,5</span>
       </li>
 
       <li class="hotel-card">
@@ -162,12 +168,10 @@
         </a>
         <span class="hotel-card-category">Гостиница</span>
         <b class="hotel-card-price">от 5000 Р</b>
-        <a class="button" href="#">Подробнее</a>
-        <button class="button" href="#">Избранное</button>
+        <a class="button card-button-more" href="#">Подробнее</a>
+        <button class="button card-button-favorite-current">Избранное</button>
         <span class="hotel-card-stars"></span>
-        <a class="hotel-card-review" href="#">
-          <span class="hotel-card-review-description">Рейтинг: 9,2</span>
-        </a>
+        <span class="hotel-card-review">Рейтинг: 9,2</span>
       </li>
 
       <li class="hotel-card">
@@ -177,12 +181,10 @@
         </a>
         <span class="hotel-card-category">Гостиница</span>
         <b class="hotel-card-price">от 2500 Р</b>
-        <a class="button" href="#">Подробнее</a>
-        <button class="button" href="#">Избранное</button>
+        <a class="button card-button-more" href="#">Подробнее</a>
+        <button class="button card-button-favorite">Избранное</button>
         <span class="hotel-card-stars"></span>
-        <a class="hotel-card-review" href="#">
-          <span class="hotel-card-review-description">Рейтинг: 6,9</span>
-        </a>
+        <span class="hotel-card-review">Рейтинг: 6,9</span>
       </li>
 
       <li class="hotel-card">
@@ -192,12 +194,10 @@
         </a>
         <span class="hotel-card-category">Гостиница</span>
         <b class="hotel-card-price">от 1500 Р</b>
-        <a class="button" href="#">Подробнее</a>
-        <button class="button" href="#">Избранное</button>
+        <a class="button card-button-more" href="#">Подробнее</a>
+        <button class="button card-button-favorite">Избранное</button>
         <span class="hotel-card-stars"></span>
-        <a class="hotel-card-review" href="#">
-          <span class="hotel-card-review-description">Рейтинг: 5,0</span>
-        </a>
+        <span class="hotel-card-review">Рейтинг: 5,0</span>
       </li>
     </ul>
 
@@ -214,52 +214,62 @@
       <li class="pagination-item">
         <a class="pagination-link" href="#">4</a>
       </li>
-      <span class="pagination-item-ellipsis">
-        ...
-      </span>
+      <li class="pagination-item">
+        <span class="pagination-item-ellipsis">
+          ...
+        </span>
+      </li>
       <li class="pagination-item">
         <a class="pagination-link" href="#">10</a>
       </li>
     </ul>
   </section>
 
-  <section class="subscription">
-    <h2 class="subscription-title">Подпишитесь на рассылку</h2>
-    <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-    <form action="https://echo.htmlacademy.ru/" class="subscription-form" metod="post">
-      <input type="email" name="subscription-email" placeholder="Ваш e-mail">
-      <button class="button subscription-button" type="submit">Подписаться</button>
-    </form>
-  </section>
-
   </main>
 
   <footer class="page-footer">
+
+    <section class="subscription">
+      <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+      <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru/" class="subscription-form" method="post">
+        <input type="email" name="subscription-email" placeholder="Ваш e-mail">
+        <button class="button subscription-button" type="submit">Подписаться</button>
+      </form>
+    </section>
+
     <section class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
+      <h2 class="visually-hidden">Социальные сети.</h2>
       <ul class="footer-social-list">
-        <a href="https://vk.com/htmlacademy" class="social-item">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-        <a href="https://t.me/htmlacademy" class="social-item">
-          <span class="visually-hidden">Телеграм</span>
-        </a>
-        <a href="https://www.youtube.com/user/htmlacademyru" class="social-item">
-          <span class="visually-hidden">Ютуб</span>
-        </a>
+        <li class="social-item">
+          <a href="https://vk.com/htmlacademy" class="social-item">
+            <span class="visually-hidden">Вконтакте.</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://t.me/htmlacademy" class="social-item">
+            <span class="visually-hidden">Телеграм.</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a href="https://www.youtube.com/user/htmlacademyru" class="social-item">
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
       </ul>
     </section>
 
     <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <adress class="contacts-adress">
+      <h2 class="visually-hidden">Контакты.</h2>
+      <address class="contacts-adress">
         <a href="tel:88128121212" class="contacts-phone">+7 (812) 812-12-12</a>
-      </adress>
+      </address>
     </section>
 
     <section class="footer-logo">
+      <h2 class="visually-hidden">HTML academy.</h2>
       <a href="https://htmlacademy.ru/" class="html-link">
-        <span class="visually-hidden">HTML academy</span>
+        <span class="visually-hidden">HTML academy.</span>
       </a>
     </section>
   </footer>
