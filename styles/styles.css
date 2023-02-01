@@ -67,3 +67,20 @@ body {
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
+
+/*-------WELCOME--------*/
+
+.welcome-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.welcome-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
