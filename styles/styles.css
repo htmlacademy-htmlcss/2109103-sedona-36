@@ -1,3 +1,5 @@
+/*-------FONTS--------*/
+
 @font-face {
   font-family: "PT sans";
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -14,8 +16,54 @@
   font-display: swap;
 }
 
+/*-------BODY--------*/
+
 body {
   font-family: "PT sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*-------LINKS--------*/
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+/*-------BUTTONS--------*/
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+}
+
+.navigation-button {
+  background-color: #756157;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.book-hotel-button {
+  background-color: #756157;
+  font-size: 20px;
+  line-height: 36px;
+}
+
+/*-------HERO--------*/
+
+.hero {
+  background-image: url("../images/background/background-welcome.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
