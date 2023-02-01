@@ -38,6 +38,42 @@ body {
   text-align: center;
 }
 
+.page-footer a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.breadcrumbs-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.pagination-link {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+  color: #ffffff;
+  text-align: center;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
 /*-------BUTTONS--------*/
 
 .button {
@@ -46,6 +82,7 @@ body {
   text-decoration: none;
   text-align: center;
   font-weight: 700;
+  border: none;
 }
 
 .navigation-button {
@@ -60,21 +97,83 @@ body {
   line-height: 36px;
 }
 
+.subscription-button {
+  background-color: #82B3D3;
+  color: #ffffff;
+}
+
+.button-apply {
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-reset {
+  background: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.button-display {
+  color: #000000;
+}
+
+.hotel-card-button-favorite {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #82B3D3;
+}
+
+.hotel-card-button-favorite-current {
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #7DB54F;
+}
+
+.card-button-more {
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
 /*-------HERO--------*/
 
-.hero {
+.main-hero {
   background-image: url("../images/background/background-welcome.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-hero {
+  background-image: url("../images/background/background-catalog.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 /*-------WELCOME--------*/
 
+.welcome {
+  text-align: center;
+}
+
 .welcome-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: center;
   text-transform: uppercase;
 }
 
@@ -82,5 +181,175 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+}
+
+/*-------ADVANTAGES_LOCATION--------*/
+
+.advantages-location-item {
+  background-color: #82B3D3;
+}
+
+.advantages-location-list {
+  text-align: center;
+  color: #ffffff;
+}
+
+.bright-block {
+  background-color: #83B3D31F;
+  color: #000000;
+}
+
+.bright-block p {
+  color: #333333;
+}
+
+.dark-block {
+  background-color: #83B3D333;
+  color: #000000;
+}
+
+.dark-block p {
+  color: #333333;
+}
+
+.advantages-location-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-location-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/*-------ABOUT--------*/
+
+.about {
   text-align: center;
 }
+
+.about-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.about-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*-------ADVANTAGES_COMPANY--------*/
+
+.advantages-company-list {
+  text-align: center;
+}
+
+.advantages-company-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.advantages-company-description {
+  font-weight: 400;
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/*-------BOOK_HOTEL--------*/
+
+.book-hotel {
+  text-align: center;
+}
+
+.book-hotel-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.book-hotel-description {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+/*-------SUBSCRIPTION--------*/
+
+.subscription {
+  text-align: center;
+  background-image: url("../images/background/background-subscribe.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.subscription-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.subscription-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+/*-------FOOTER--------*/
+
+.contacts-adress {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+/*-------CATALOG_HOTELS--------*/
+
+.catalog-hotels-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.catalog-hotels-select-control {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.hotel-card-category {
+  color: #333333;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.hotel-card-price {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  font-weight: 400;
+}
+
+.hotel-card-review {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+  color: #333333;
+}
+
+/*-------PAGINATION--------*/
