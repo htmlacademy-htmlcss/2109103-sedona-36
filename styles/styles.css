@@ -150,7 +150,7 @@ body {
   color: #ffffff;
 }
 
-/*-------HERO--------*/
+/*-------HERO_BACKGROUND--------*/
 
 .main-hero {
   background-image: url("../images/background/background-welcome.jpg");
@@ -351,5 +351,3 @@ body {
   background-color: #F2F2F2;
   color: #333333;
 }
-
-/*-------PAGINATION--------*/
