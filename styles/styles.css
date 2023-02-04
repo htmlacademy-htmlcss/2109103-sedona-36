@@ -64,13 +64,13 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
   text-align: center;
 }
 
 .pagination-current {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #000000;
 }
 
@@ -98,12 +98,12 @@ body {
 }
 
 .subscription-button {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   color: #ffffff;
 }
 
 .button-apply {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -129,7 +129,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .hotel-card-button-favorite-current {
@@ -137,7 +137,7 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .card-button-more {
@@ -186,7 +186,7 @@ body {
 /*-------ADVANTAGES_LOCATION--------*/
 
 .advantages-location-item {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .advantages-location-list {
@@ -195,7 +195,7 @@ body {
 }
 
 .bright-block {
-  background-color: #83B3D31F;
+  background-color: #83b3d31f;
   color: #000000;
 }
 
@@ -204,7 +204,7 @@ body {
 }
 
 .dark-block {
-  background-color: #83B3D333;
+  background-color: #83b3d333;
   color: #000000;
 }
 
@@ -348,6 +348,6 @@ body {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   color: #333333;
 }
