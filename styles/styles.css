@@ -27,7 +27,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 html {
@@ -38,6 +38,10 @@ html {
 
 .main-container {
   flex-grow: 1;
+}
+
+.page-container {
+  background-color: #ffffff;
 }
 
 /*-------LINKS--------*/
@@ -364,4 +368,10 @@ html {
   text-transform: uppercase;
   background-color: #f2f2f2;
   color: #333333;
+}
+
+/*-------NAVIGATION--------*/
+
+.main-navigation {
+  display: flex;
 }
