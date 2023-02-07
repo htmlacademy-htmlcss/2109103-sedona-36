@@ -274,7 +274,13 @@ html {
 /*-------ADVANTAGES_COMPANY--------*/
 
 .advantages-company-list {
+  display: flex;
+  justify-content: space-between;
   text-align: center;
+}
+
+.advantages-company-item {
+  width: 400px;
 }
 
 .advantages-company-title {
@@ -289,6 +295,14 @@ html {
   color: #333333;
   font-size: 18px;
   line-height: 21px;
+}
+
+/*-------ADVANTAGES--------*/
+
+.advantages-company-list,
+.advantages-location-list {
+  margin: 0;
+  padding: 0;
 }
 
 /*-------BOOK_HOTEL--------*/
@@ -399,6 +413,7 @@ html {
 }
 
 .navigation-logo {
+  margin: 0 auto;
   width: 140px;
   margin-right: 30px;
 }
