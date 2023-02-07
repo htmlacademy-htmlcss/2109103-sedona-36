@@ -42,6 +42,15 @@ html {
 
 .page-container {
   background-color: #ffffff;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*-------LOGO--------*/
+
+.logo {
+  display: block;
+  margin: 0 auto;
 }
 
 /*-------LINKS--------*/
