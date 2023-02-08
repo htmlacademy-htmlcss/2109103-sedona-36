@@ -53,6 +53,15 @@ html {
   margin: 0 auto;
 }
 
+.filters-container-left {
+  width: 370px;
+  margin-right: 140px;
+}
+
+.filters-container-right {
+  width: 550px;
+}
+
 /*-------LOGO--------*/
 
 .logo {
@@ -194,7 +203,7 @@ html {
 
 .inner-hero {
   background-image: url("../images/background/background-catalog.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -227,19 +236,21 @@ html {
 
 /*-------ADVANTAGES_LOCATION--------*/
 
-.location-item-image {
-  width: 1200px;
-}
-
 .advantages-location-item {
   width: 400px;
   background-color: #82b3d3;
+}
+
+.location-item-image {
+  width: 1200px;
+  display: flex;
 }
 
 .advantages-location-list {
   text-align: center;
   color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .bright-block {
@@ -413,6 +424,38 @@ html {
   background-color: #f2f2f2;
   color: #333333;
 }
+
+/*-------CATALOG_FILTERS--------*/
+
+.inner-hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inner-header {
+  width: 1060px;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filters {
+  color: #ffffff;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
 
 /*-------NAVIGATION--------*/
 
