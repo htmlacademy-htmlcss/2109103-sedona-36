@@ -41,6 +41,25 @@ html {
   margin: 0 auto;
 }
 
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+
+.subscribe-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+/*-------LOGO--------*/
+
+.logo {
+  display: block;
+  margin: 0 auto;
+}
+
 /*-------LINKS--------*/
 
 .navigation-link {
@@ -200,13 +219,27 @@ html {
 
 /*-------ADVANTAGES_LOCATION--------*/
 
+.advantages-company-list,
+.advantages-location-list {
+  padding: 0;
+  margin: 0;
+}
+
+/*-------ADVANTAGES_LOCATION--------*/
+
+.location-item-image {
+  width: 1200px;
+}
+
 .advantages-location-item {
+  width: 400px;
   background-color: #82b3d3;
 }
 
 .advantages-location-list {
   text-align: center;
   color: #ffffff;
+  display: flex;
 }
 
 .bright-block {
