@@ -48,8 +48,8 @@ html {
 
 .page-footer-container {
   display: flex;
-  width: 1060px;
   margin: 0 auto;
+  justify-content: space-around;
 }
 
 /*-------LOGO--------*/
@@ -354,18 +354,6 @@ html {
 }
 
 /*-------FOOTER--------*/
-
-.footer-social {
-  width: 145px;
-}
-
-.footer-logo {
-  max-width: 120px;
-}
-
-.footer-contacts {
-  margin: 0 auto;
-}
 
 .contacts-adress {
   font-size: 40px;
