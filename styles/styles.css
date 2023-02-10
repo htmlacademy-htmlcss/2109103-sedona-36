@@ -88,6 +88,8 @@ html {
 .logo {
   display: block;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 /*-------LINKS--------*/
@@ -227,6 +229,7 @@ html {
   background-image: url("../images/background/background-welcome.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+  margin-bottom: 70px;
 }
 
 .inner-hero {
@@ -246,12 +249,16 @@ html {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .welcome-description {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  margin: 0;
+  margin-bottom: 70px;
 }
 
 /*-------ADVANTAGES_LOCATION--------*/
