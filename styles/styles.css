@@ -83,6 +83,10 @@ html {
   justify-content: space-around;
 }
 
+.item-container {
+  padding: 100px 85px;
+}
+
 /*-------LOGO--------*/
 
 .logo {
@@ -261,12 +265,13 @@ html {
   margin-bottom: 70px;
 }
 
-/*-------ADVANTAGES_LOCATION--------*/
+/*-------ADVANTAGES--------*/
 
 .advantages-company-list,
 .advantages-location-list {
   padding: 0;
   margin: 0;
+  list-style-type: none;
 }
 
 /*-------ADVANTAGES_LOCATION--------*/
@@ -307,6 +312,8 @@ html {
 }
 
 .advantages-location-title {
+  margin: 0;
+  margin-bottom: 62px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -314,6 +321,7 @@ html {
 }
 
 .advantages-location-description {
+  margin: 0;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
