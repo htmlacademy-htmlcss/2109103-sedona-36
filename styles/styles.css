@@ -93,6 +93,7 @@ html {
 /*-------LINKS--------*/
 
 .navigation-link {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -100,6 +101,12 @@ html {
   color: #000000;
   text-transform: capitalize;
   text-align: center;
+  padding: 20px 16px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 20px;
+  min-height: 20px;
 }
 
 .page-footer a {
@@ -515,6 +522,9 @@ html {
   margin: 0;
   padding: 0;
   width: 460px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-user {
