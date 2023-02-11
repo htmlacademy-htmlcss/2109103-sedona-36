@@ -162,8 +162,18 @@ html {
   border: none;
 }
 
-.navigation-button {
+.navigation-button-container {
+  display: flex;
+  align-items: center;
   background-color: #756157;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 8px 34px;
+  border-radius: 4px;
+}
+
+.navigation-button {
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
 }
@@ -608,17 +618,17 @@ html {
 
 .main-navigation {
   display: flex;
-  width: 1060px;
+  padding: 0 70px 0 70px;
   margin: 0 auto;
 }
 
 .navigation-list {
   margin: 0;
   padding: 0;
-  width: 460px;
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .navigation-user {
