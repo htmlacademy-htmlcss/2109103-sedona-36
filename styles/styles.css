@@ -58,6 +58,7 @@ html {
 .page-footer-container {
   display: flex;
   justify-content: space-around;
+  padding: 40px 70px 30px 40px;
 }
 
 .filters-container-left {
@@ -169,12 +170,23 @@ html {
 }
 
 .book-hotel-button {
+  display: block;
+  border-radius: 4px;
+  padding: 8px 50px;
+  width: 350px;
+  margin: 0 auto;
+  margin-bottom: 96px;
   background-color: #756157;
   font-size: 20px;
   line-height: 36px;
 }
 
 .subscription-button {
+  border-radius: 0 4px 4px 0;
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   background-color: #82b3d3;
   color: #ffffff;
 }
@@ -403,6 +415,8 @@ html {
 }
 
 .book-hotel-title {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -410,6 +424,10 @@ html {
 }
 
 .book-hotel-description {
+  width: 590px;
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 56px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -419,6 +437,7 @@ html {
 /*-------SUBSCRIPTION--------*/
 
 .subscription {
+  padding: 96px 260px;
   text-align: center;
   background-image: url("../images/background/background-subscribe.jpg");
   background-size: 100% auto;
@@ -427,6 +446,8 @@ html {
 }
 
 .subscription-title {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -434,8 +455,21 @@ html {
 }
 
 .subscription-description {
+  margin: 0;
+  margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-field {
+  width: 450px;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 /*-------FOOTER--------*/
