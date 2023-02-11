@@ -246,9 +246,12 @@ html {
 
 .welcome {
   text-align: center;
+  margin-bottom: 64px;
 }
 
 .welcome-title {
+  width: 620px;
+  display: inline-block;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -312,6 +315,8 @@ html {
 }
 
 .advantages-location-title {
+  width: 175px;
+  display: inline-block;
   margin: 0;
   margin-bottom: 62px;
   font-weight: 700;
@@ -331,9 +336,14 @@ html {
 
 .about {
   text-align: center;
+  margin-bottom: 96px;
 }
 
 .about-title {
+  display: inline-block;
+  width: 500px;
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -341,6 +351,8 @@ html {
 }
 
 .about-description {
+  margin: 0;
+  margin-bottom: 64px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
