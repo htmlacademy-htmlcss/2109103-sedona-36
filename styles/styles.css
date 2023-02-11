@@ -36,7 +36,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   margin: 0;
 }
 
@@ -139,6 +139,12 @@ html {
   text-decoration: none;
 }
 
+.breadcrumbs-icon {
+  min-width: 12px;
+  min-height: 12px;
+  margin-right: 28px;
+}
+
 .hotel-card-link {
   text-decoration: none;
   font-weight: 700;
@@ -155,6 +161,12 @@ html {
   background-color: #82b3d3;
   color: #ffffff;
   text-align: center;
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.pagination-link:last-child {
+  padding: 12px 18px;
 }
 
 .pagination-current {
@@ -472,6 +484,14 @@ html {
   color: #ffffff;
 }
 
+.subscription-catalog {
+  padding: 96px 260px;
+  text-align: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  color: #000000;
+}
+
 .subscription-title {
   margin: 0;
   margin-bottom: 20px;
@@ -497,6 +517,13 @@ html {
   width: 450px;
   border: none;
   border-radius: 4px 0 0 4px;
+}
+
+.subscription-field-catalog {
+  width: 450px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
 }
 
 /*-------FOOTER--------*/
@@ -598,8 +625,6 @@ html {
   list-style-type: none;
 }
 
-
-
 /*-------CATALOG_FILTERS--------*/
 
 .inner-hero {
@@ -644,11 +669,21 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 8px
+  list-style-type: none;
+  padding-left: 70px;
+  padding-right: 70px;
+  margin-bottom: 60px;
 }
 
-.pagination-item {
-  width: 60px;
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-item-ellipsis {
+  padding: 16px 22px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 /*-------NAVIGATION--------*/
