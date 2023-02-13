@@ -36,7 +36,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   margin: 0;
 }
 
@@ -53,6 +53,7 @@ html {
 .page-container {
   width: 1200px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
 .page-footer-container {
@@ -514,12 +515,6 @@ html {
 }
 
 .subscription-field {
-  width: 450px;
-  border: none;
-  border-radius: 4px 0 0 4px;
-}
-
-.subscription-field-catalog {
   width: 450px;
   border: none;
   border-radius: 4px 0 0 4px;
