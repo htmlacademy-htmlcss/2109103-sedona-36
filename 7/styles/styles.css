@@ -89,11 +89,6 @@ html {
   padding: 100px 85px;
 }
 
-.hotel-list-container {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 .card-content-container {
   display: flex;
   flex-wrap: wrap;
@@ -169,6 +164,7 @@ html {
 }
 
 .pagination-link {
+  display: block;
   text-decoration: none;
   font-weight: 700;
   font-size: 20px;
@@ -178,10 +174,6 @@ html {
   text-align: center;
   padding: 12px 24px;
   border-radius: 4px;
-}
-
-.pagination-link:last-child {
-  padding: 12px 18px;
 }
 
 .pagination-current {
@@ -656,6 +648,8 @@ html {
 .hotel-list {
   margin: 0;
   padding: 0;
+  padding-left: 70px;
+  padding-right: 70px;
   list-style-type: none;
   margin-bottom: 80px;
   display: grid;
@@ -747,7 +741,12 @@ html {
   margin-right: 8px;
 }
 
+.pagination-link-double {
+  padding: 12px 18px;
+}
+
 .pagination-item-ellipsis {
+  display: block;
   padding: 16px 22px;
   font-weight: 400;
   font-size: 22px;
