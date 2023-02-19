@@ -89,6 +89,34 @@ html {
   padding: 100px 85px;
 }
 
+.item-container-blue {
+  position: relative;
+}
+
+.item-container-white {
+  position: relative;
+}
+
+.item-container-blue::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  display: block;
+  border: 1px solid #ffffff4d;
+  top: 186px;
+  right: 170px;
+}
+
+.item-container-white::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  display: block;
+  border: 1px solid #0000004d;
+  top: 186px;
+  right: 170px;
+}
+
 .card-content-container {
   display: flex;
   flex-wrap: wrap;
@@ -314,7 +342,7 @@ html {
   content: "";
   background-image: url("../images/divider.svg");
   background-repeat: no-repeat;
-  top: 425px;
+  top: 426px;
   width: 1200px;
   height: 57px;
 }
