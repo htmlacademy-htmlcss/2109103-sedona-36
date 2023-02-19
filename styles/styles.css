@@ -200,6 +200,7 @@ html {
   line-height: 20px;
   padding: 8px 34px;
   border-radius: 4px;
+  margin-left: 20px;
 }
 
 .navigation-button {
@@ -305,6 +306,17 @@ html {
   background-size: 100% auto;
   background-repeat: no-repeat;
   margin-bottom: 70px;
+  position: relative;
+}
+
+.main-hero::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images/divider.svg");
+  background-repeat: no-repeat;
+  top: 425px;
+  width: 1200px;
+  height: 57px;
 }
 
 .inner-hero {
@@ -683,7 +695,6 @@ html {
 
 .inner-header-title {
   display: block;
-  margin: 0;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
@@ -778,4 +789,34 @@ html {
 .navigation-logo {
   width: 140px;
   margin-right: 30px;
+}
+
+.navigation-link-counter {
+  position: relative;
+}
+
+.navigation-link-counter::before {
+  position: absolute;
+  content: "";
+  color: #ffffff;
+  width: 20px;
+  height: 20px;
+  background-color: #7db54f;
+  border-radius: 50%;
+  left: 20px;
+  top: 11px;
+}
+
+.navigation-user .navigation-item:nth-child(1) .navigation-link{
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 22px 14px;
+}
+
+.navigation-user .navigation-item:nth-child(2) .navigation-link{
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 22px 14px;
 }
