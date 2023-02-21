@@ -51,6 +51,9 @@ html {
 }
 
 .page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
@@ -814,10 +817,38 @@ html {
 .hotel-card-stars {
   display: block;
   background-image: url(../images/star-review.svg);
-  background-repeat: repeat-x;
-  background-position: center;
+  background-repeat: space;
+  text-align: center;
   width: 140px;
+  height: 17px;
+  margin: 0;
+  padding: 0;
   margin-right: 20px;
+}
+
+.card-four-star {
+  width: 80px;
+  margin-right: 80px;
+}
+
+.card-three-star {
+  width: 60px;
+  margin-right: 100px;
+}
+
+.card-two-star {
+  width: 40px;
+  margin-right: 120px;
+}
+
+.card-one-star {
+  width: 20px;
+  margin-right: 140px;
+}
+
+.review-container {
+  display: flex;
+  align-items: center;
 }
 
 .hotel-list {
@@ -987,4 +1018,15 @@ html {
   padding: 22px 14px;
 }
 
-/*-------SORTING--------*/
+.navigation-link-current {
+  position: relative;
+}
+
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  border-bottom: 2px solid #756257;
+  top: 58px;
+  width: 68px;
+}
