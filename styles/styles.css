@@ -172,45 +172,60 @@ html {
   list-style-type: none;
 }
 
+.breadcrumbs-item {
+  position: relative;
+  margin-right: 28px;
+}
+
+.breadcrumbs-item::after {
+  content: "";
+  display: block;
+  background-image: url(../images/breadcrumbs/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 6px;
+  height: 10px;
+  right: -18px;
+  top: 3px;
+  position: absolute;
+}
+
 .breadcrumbs-link {
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
-  position: relative;
   display: block;
 }
 
-.breadcrumbs-link::after {
-  content: "";
-  display: block;
-  background-image: url(../images/breadcrumbs/breadcrumbs-arrow.svg);
-  fill: #ffffff;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 6px;
-  height: 10px;
-  right: -20px;
-  top: 3px;
-  position: absolute;
-}
-
-.breadcrumbs-item:last-child .breadcrumbs-link::after {
+.breadcrumbs-item:last-child::after {
   content: none;
 }
 
 .breadcrumbs-icon {
   min-width: 13px;
   min-height: 15px;
-  margin-right: 28px;
   background-image: url(../images/breadcrumbs/breadcrumbs-home.svg);
   background-position: center;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .breadcrumbs-icon svg {
   fill: #ffffff;
+}
+
+.breadcrubms-link-text:hover {
+  color: #ffffff99;
+}
+
+.breadcrubms-link-text:focus {
+  outline: none;
+}
+
+.breadcrubms-link-text:active {
+  color: #ffffff4d;
 }
 
 .hotel-card-link {
@@ -220,6 +235,8 @@ html {
   line-height: 28px;
   color: #000000;
 }
+
+/*-------PAGINATION--------*/
 
 .pagination-link {
   display: block;
@@ -232,11 +249,28 @@ html {
   text-align: center;
   padding: 12px 24px;
   border-radius: 4px;
+  outline: none;
 }
 
-.pagination-current {
+.pagination-link:hover {
+  background-color: #68a2ca;
+}
+
+.pagination-link:focus {
+  background-color: #68a2ca;
+}
+
+.pagination-link:active {
+  color: #ffffff4d;
+}
+
+.pagination-current,
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
   background-color: #f2f2f2;
   color: #000000;
+  cursor: pointer;
 }
 
 /*-------BUTTONS--------*/
@@ -272,6 +306,11 @@ html {
 
 .button:focus {
   outline: none;
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+  color: #ffffff;
 }
 
 .book-hotel-button {
@@ -344,6 +383,19 @@ html {
   border-radius: 4px;
   display: flex;
   box-sizing: border-box;
+}
+
+.button-display:hover {
+  border-color: #000000;
+}
+
+.button-display:focus {
+  border-color: #68a2ca;
+  outline: none;
+}
+
+.button-display:active {
+  border-color: #000000;
 }
 
 .button-outlined {
@@ -806,12 +858,32 @@ html {
 
 .catalog-hotels-select-control {
   padding: 14px 20px;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   width: 290px;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
 }
+
+.catalog-hotels-select-control:hover {
+  border-color: #68a2ca;
+}
+
+.catalog-hotels-select-control:focus {
+  outline: none;
+  border-color: #68a2ca;
+}
+
+.catalog-hotels-select-control:active {
+  border-color: #3f5e72;
+}
+
+.catalog-hotels-select-control:disabled {
+  color: #0000004d;
+  border-color: #0000004d;
+}
+
 
 .hotel-card-category {
   color: #333333;
