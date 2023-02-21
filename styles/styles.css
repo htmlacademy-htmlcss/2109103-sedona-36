@@ -223,8 +223,6 @@ html {
   display: flex;
   align-items: center;
   background-color: #756157;
-  font-size: 16px;
-  line-height: 20px;
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: 20px;
@@ -676,6 +674,15 @@ html {
   width: 720px;
 }
 
+.contacts-phone:hover,
+.contacts-phone:focus {
+  color: #756157;
+}
+
+.contacts-phone:active {
+  color: #7561574D;
+}
+
 .footer-social-list {
   list-style-type: none;
   margin: 0;
@@ -701,6 +708,18 @@ html {
   fill: #83b3d3;
 }
 
+.social-icon:hover {
+  fill: #68a2ca;
+}
+
+.social-icon:focus {
+  outline: none;
+}
+
+.social-icon:active {
+  fill: #68a2ca4d;
+}
+
 .footer-social {
   display: flex;
   flex-wrap: wrap;
@@ -720,6 +739,15 @@ html {
   left: 0;
   margin: auto;
   fill: #000000;
+}
+
+.html-logo:hover,
+.html-logo:focus {
+  fill: #756157;
+}
+
+.html-logo:active {
+  fill: #7561574d;
 }
 
 /*-------CATALOG_HOTELS--------*/
