@@ -219,7 +219,7 @@ html {
   border: none;
 }
 
-.navigation-button-container {
+.navigation-button {
   display: flex;
   align-items: center;
   background-color: #756157;
@@ -228,12 +228,21 @@ html {
   padding: 8px 34px;
   border-radius: 4px;
   margin-left: 20px;
-}
-
-.navigation-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:active {
+  color: #ffffff4d;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .book-hotel-button {
@@ -258,6 +267,13 @@ html {
   color: #ffffff;
 }
 
+.subscription-button:hover,
+.button-apply:hover,
+.hotel-card-button-favorite:hover {
+  background-color: #68a2ca;
+  cursor: pointer;
+}
+
 .button-apply {
   background-color: #82b3d3;
   font-weight: 700;
@@ -269,6 +285,7 @@ html {
   border-radius: 4px;
 }
 
+
 .button-reset {
   background: none;
   font-weight: 700;
@@ -276,6 +293,17 @@ html {
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
+  padding: 8px 50px;
+}
+
+.button-reset:hover {
+  background: none;
+  color: #ffffff4d;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .button-display {
@@ -314,6 +342,11 @@ html {
   width: 140px;
   padding: 8px 26px;
   border-radius: 4px;
+}
+
+.hotel-card-button-favorite-current:hover {
+  background-color: #6c9e42;
+  cursor: pointer;
 }
 
 .card-button-more {
@@ -748,6 +781,15 @@ html {
   color: #333333;
   padding: 8px 22px;
   border-radius: 4px;
+}
+
+.hotel-card-stars {
+  display: block;
+  background-image: url(../images/star-review.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  width: 140px;
+  margin-right: 20px;
 }
 
 .hotel-list {
