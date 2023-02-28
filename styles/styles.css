@@ -122,6 +122,79 @@ html {
   margin-bottom: 16px;
 }
 
+/*-------MODAL--------*/
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 64px 70px;
+  background-color: #ffffff;
+}
+
+.modal-search {
+  width: 576px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 64px;
+  right: 52px;
+  width: 52px;
+  height: 52px;
+  background-color: #f2f2f2;
+  border: none;
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 64px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.search-form {
+  display: grid;
+  grid-template-columns: repeat(2, 247px);
+  column-gap: 88px;
+}
+
+.group-check-in {
+  grid-column: 1 / -1;
+}
+
+.group-check-out {
+  grid-column: 1 / -1;
+}
+
+.search-form-button {
+  grid-column: 1 / -1;
+  background-color: #83b3d3;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
 /*-------LOGO--------*/
 
 .logo {
@@ -439,6 +512,11 @@ html {
   width: 140px;
   margin-right: 20px;
   border-radius: 4px;
+}
+
+.search-form-button:hover,
+.search-form-button:focus  {
+  background-color: #68a2Ca;
 }
 
 /*-------HERO_BACKGROUND--------*/
