@@ -139,11 +139,58 @@ html {
   margin: auto;
   padding: 64px 70px;
   background-color: #ffffff;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 }
 
 .modal-search {
   width: 576px;
 }
+
+.field {
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 4px;
+}
+
+.field::placeholder {
+  color: #000000;
+}
+
+.field-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.date {
+  color: #333333;
+  font-size: 16px;
+  line-height: 21px;
+  margin-top: 4px;
+  margin-left: 156px;
+}
+
+.date-error {
+  color: #ff5757;
+}
+
+.field-group {
+  margin-bottom: 48px;
+}
+
+.field-group-people {
+  margin: 0;
+}
+
+/* .check-container {
+  display: flex;
+} */
 
 .modal-close-button {
   position: absolute;
@@ -170,22 +217,22 @@ html {
   text-transform: uppercase;
 }
 
-.search-form {
+/* .search-form {
   display: grid;
-  grid-template-columns: repeat(2, 247px);
-  column-gap: 88px;
-}
+  grid-template-columns: repeat(2, 246px);
+} */
 
-.group-check-in {
+/* .group-check-in {
+  justify-content: space-between;
   grid-column: 1 / -1;
 }
 
 .group-check-out {
   grid-column: 1 / -1;
-}
+} */
 
 .search-form-button {
-  grid-column: 1 / -1;
+  width: 576px;
   background-color: #83b3d3;
   border-radius: 10px;
   font-weight: 700;
@@ -193,6 +240,178 @@ html {
   line-height: 24px;
   padding-top: 18px;
   padding-bottom: 18px;
+}
+
+.check-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+/* .check-label-people {
+  margin-right: 46px;
+} */
+
+.check-field {
+  padding: 12px 20px;
+  width: 400px;
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+}
+
+.adults-field,
+.children-field {
+  display: block;
+  width: 10px;
+  font: inherit;
+  text-align: center;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 0;
+  padding: 14px 10px;
+  appearance: textfield;
+}
+
+.adults-field::-webkit-outer-spin-button,
+.adults-field::-webkit-inner-spin-button,
+.children-field::-webkit-outer-spin-button,
+.children-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.label-children {
+  display: block;
+  position: relative;
+}
+
+.label-children::before {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  left: 62px;
+  top: 3px;
+  background-image: url("../images/information.svg");
+  background-position: center;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.field-button {
+  padding: 23px 15px;
+  border: none;
+  background-color: #f2f2f2;
+  position: relative;
+  cursor: pointer;
+}
+
+.button-minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+}
+
+.button-minus::before {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 9px;
+  width: 14px;
+  height: 2px;
+  background: rgba(117, 97, 87, 0.3);
+}
+
+.button-plus::before {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 9px;
+  width: 14px;
+  height: 14px;
+  background-image: url("../images/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-plus::before {
+  transform: rotate(90deg);
+}
+
+.field-people-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.field-button-container {
+  display: flex;
+}
+
+.field-people-left,
+.field-people-right {
+  display: flex;
+  align-items: center;
+}
+
+.field-people-left {
+  margin-right: 88px;
+}
+
+.field-people-left .check-label-people {
+  margin-right: 46px;
+}
+
+.field-people-right .check-label-people {
+  margin-right: 82px;
+  padding-right: 36px;
+}
+
+/*-------POPOVER--------*/
+
+.popover {
+  position: absolute;
+  bottom: 25px;
+  right: 125px;
+  font: inherit;
+  font-weight: 400;
+  background: #333333;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  color: #ffffff;
+  display: none;
+}
+
+.popover-open {
+  display: block;
+}
+
+.popover::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 20px;
+  width: 0;
+  height: 0;
+  top: -10px;
+  right: 120px;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #333333;
+}
+
+.popover-description {
+  margin: 0;
+  width: 216px;
+  padding: 15px 18px 18px 22px;
 }
 
 /*-------LOGO--------*/

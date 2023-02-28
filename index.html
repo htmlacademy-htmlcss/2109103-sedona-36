@@ -202,23 +202,43 @@
           <h2 class="modal-title">Поиск гостиниц в Седоне</h2>
           <form  class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="field-group group-check-in">
-              <label for="check-in">Дата Заезда:</label>
-              <input class="check-in-field field" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020">
-              <span class="date-past">Мы не можем отправить вас в прошлое.</span>
+              <label class="check-label" for="check-in">Дата Заезда:</label>
+              <input class="check-field field" type="text" id="check-in" name="check-in" placeholder="27 апреля 2020">
+              <span class="date date-error">Мы не можем отправить вас в прошлое.</span>
             </p>
             <p class="field-group group-check-out">
-              <label for="check-out">Дата Выезда:</label>
-              <input class="check-out-field field" type="text" id="check-out" name="check-out" placeholder="1 сентября 2023">
-              <span class="date-free">На эти даты есть свободные номера. Пока есть.</span>
+              <label class="check-label" for="check-out">Дата Выезда:</label>
+              <input class="check-field field" type="text" id="check-out" name="check-out" placeholder="1 сентября 2023">
+              <span class="date date-free">На эти даты есть свободные номера. Пока есть.</span>
             </p>
-            <p class="field-group">
-              <label for="adults">Взрослые</label>
-              <input class="adults-field field" type="text" id="adults" name="adults" placeholder="1 сентября 2023">
-            </p>
-            <p class="field-group">
-              <label for="children">Взрослые</label>
-              <input class="children-field field" type="text" id="children" name="children" placeholder="1 сентября 2023">
-            </p>
+            <div class="field-people-container">
+              <p class="field-group field-group-people">
+                <div class="field-people-left">
+                  <label class="check-label check-label-people label-adults" for="adults">Взрослые:</label>
+                  <div class="field-button-container">
+                    <button class="field-button button-minus"></button>
+                    <input class="adults-field field" type="number" id="adults" name="adults" placeholder="2">
+                    <button class="field-button button-plus"></button>
+                  </div>
+                </div>
+              </p>
+              <p class="field-group field-group-people">
+                <div class="field-people-right">
+                  <label class="check-label check-label-people label-children" for="children">Дети:</label>
+                  <div class="popover popover-info">
+                    <div class="popover-content">
+                      <h2 class="visually-hidden">Количество детей от 6 до 12 лет.</h2>
+                      <p class="popover-description">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                    </div>
+                  </div>
+                  <div class="field-button-container">
+                    <button class="field-button button-minus"></button>
+                    <input class="children-field field" type="number" id="children" name="children" placeholder="2">
+                    <button class="field-button button-plus"></button>
+                  </div>
+                </div>
+              </p>
+            </div>
             <button type="submit" class="button search-form-button">Найти</button>
           </form>
         </section>
