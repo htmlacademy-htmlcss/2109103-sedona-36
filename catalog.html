@@ -69,7 +69,7 @@
               <form action="https://echo.htmlacademy.ru/" class="catalog-filter">
                 <div class="filters-container-left">
                 <fieldset class="catalog-filter-group filter-group-left">
-                  <legend class="catalog-filter-title">Инфраструктура</legend>
+                  <legend class="catalog-filter-title">Инфраструктура:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
@@ -96,7 +96,7 @@
                 </fieldset>
 
                 <fieldset class="catalog-filter-group filter-group-right">
-                  <legend class="catalog-filter-title">Тип жилья</legend>
+                  <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
                     <li class="catalog-filter-item">
                       <label class="control">
@@ -158,11 +158,13 @@
           <section class="catalog-hotels">
             <div class="catalog-hotels-sorting">
               <h2 class="catalog-hotels-title">Найдено гостиниц: <span class="catalog-hotels-amount">38</span></h2>
-              <select class="catalog-hotels-select-control" aria-label="Сортировка">
-                <option value="cheap" selected>Сначала дешевые</option>
-                <option value="expensive">Сначала дорогие</option>
-                <option value="popular">Сначала популярные</option>
-              </select>
+              <div class="select">
+                <select class="catalog-hotels-select-control" aria-label="Сортировка">
+                  <option value="cheap" selected>Сначала дешевые</option>
+                  <option value="expensive">Сначала дорогие</option>
+                  <option value="popular">Сначала популярные</option>
+                </select>
+              </div>
               <ul class="catalog-hotels-display">
                 <li class="hotels-display-item hotels-display-item-current">
                   <a href="#" class="button-display button-outlined">
