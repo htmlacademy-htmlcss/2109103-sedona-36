@@ -166,6 +166,7 @@ html {
   align-items: center;
   justify-content: space-between;
   margin: 0;
+  margin-bottom: 22px;
 }
 
 .date {
@@ -180,17 +181,9 @@ html {
   color: #ff5757;
 }
 
-.field-group {
-  margin-bottom: 48px;
-}
-
 .field-group-people {
   margin: 0;
 }
-
-/* .check-container {
-  display: flex;
-} */
 
 .modal-close-button {
   position: absolute;
@@ -208,6 +201,19 @@ html {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  outline: none;
+  background-image: url("../images/cross-active.svg");
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -216,20 +222,6 @@ html {
   line-height: 36px;
   text-transform: uppercase;
 }
-
-/* .search-form {
-  display: grid;
-  grid-template-columns: repeat(2, 246px);
-} */
-
-/* .group-check-in {
-  justify-content: space-between;
-  grid-column: 1 / -1;
-}
-
-.group-check-out {
-  grid-column: 1 / -1;
-} */
 
 .search-form-button {
   width: 576px;
@@ -248,10 +240,6 @@ html {
   line-height: 24px;
 }
 
-/* .check-label-people {
-  margin-right: 46px;
-} */
-
 .check-field {
   padding: 12px 20px;
   width: 400px;
@@ -259,6 +247,18 @@ html {
   background-repeat: no-repeat;
   background-position: right 20px center;
   appearance: none;
+}
+
+.check-field:hover {
+  background-color: #e6e6e6;
+}
+
+.check-field:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.check-field:focus-visible {
+  outline: 2px solid #000000;;
 }
 
 .adults-field,
@@ -304,7 +304,7 @@ html {
 }
 
 .field-button {
-  padding: 23px 15px;
+  padding: 23px 20px;
   border: none;
   background-color: #f2f2f2;
   position: relative;
@@ -319,30 +319,43 @@ html {
   border-radius: 0 4px 4px 0;
 }
 
-.button-minus::before {
-  content: "";
+.icon-plus {
   position: absolute;
-  top: 23px;
-  left: 9px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   width: 14px;
   height: 2px;
-  background: rgba(117, 97, 87, 0.3);
+  fill: #7561574D;
 }
 
-.button-plus::before {
-  content: "";
+.icon-minus {
   position: absolute;
-  top: 17px;
-  left: 9px;
-  width: 14px;
-  height: 14px;
-  background-image: url("../images/plus.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  fill: #7561574D;
 }
 
-.button-plus::before {
-  transform: rotate(90deg);
+.icon-minus:hover,
+.icon-plus:hover {
+  fill: #000000;
+}
+
+.icon-minus:focus,
+.icon-plus:focus {
+  outline: 3px solid #82B3D3;
+}
+
+.icon-minus:active,
+.icon-plus:active {
+  fill: #7561574D;
 }
 
 .field-people-container {
@@ -371,7 +384,7 @@ html {
 }
 
 .field-people-right .check-label-people {
-  margin-right: 82px;
+  margin-right: 46px;
   padding-right: 36px;
 }
 
