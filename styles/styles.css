@@ -292,7 +292,7 @@ html {
   position: relative;
 }
 
-.label-children::before {
+/* .label-children::before {
   display: block;
   position: absolute;
   content: "";
@@ -305,7 +305,7 @@ html {
   background-color: #83b3d3;
   border-radius: 50%;
   cursor: pointer;
-}
+} */
 
 .field-button {
   padding: 23px 20px;
@@ -392,26 +392,49 @@ html {
   padding-right: 36px;
 }
 
-/*-------POPOVER--------*/
+/*-------TOOLTIP--------*/
 
-.popover {
+.tooltip {
   position: absolute;
-  bottom: 25px;
-  right: 125px;
-  font: inherit;
-  font-weight: 400;
-  background: #333333;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-  border-radius: 10px;
-  color: #ffffff;
-  display: none;
+  margin-top: -23px;
+  margin-left: 60px;
+  width: 26px;
+  height: 26px;
 }
 
-.popover-open {
+.tooltip-toggle {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
   display: block;
 }
 
-.popover::before {
+.tooltip-icon {
+  width: 100%;
+  height: 100%;
+  color: #83b3d3;
+  display: block;
+}
+
+.tooltip-text {
+  background-color: #333333;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  display: none;
+  width: 216px;
+  position: absolute;
+  margin-top: 15px;
+  transform: translateX(-44%);
+  z-index: 1;
+}
+
+.tooltip-text::before {
   position: absolute;
   content: "";
   display: block;
@@ -425,10 +448,14 @@ html {
   border-bottom: 10px solid #333333;
 }
 
-.popover-description {
-  margin: 0;
-  width: 216px;
-  padding: 15px 18px 18px 22px;
+.tooltip-toggle:hover + .tooltip-text,
+.tooltip-toggle:focus + .tooltip-text {
+  display: block;
+}
+
+.form-label-icon {
+  position: relative;
+  padding-right: 26px;
 }
 
 /*-------LOGO--------*/
