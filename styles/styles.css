@@ -519,6 +519,10 @@ html {
   fill: #ffffff;
 }
 
+.breadcrumbs-link:focus-visible {
+  outline: 1px solid #83b3d3;
+}
+
 .breadcrubms-link-text:hover {
   color: #ffffff99;
 }
@@ -599,16 +603,14 @@ html {
   line-height: 20px;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
+  outline: none;
   background-color: #615048;
 }
 
 .button:active {
   color: #ffffff4d;
-}
-
-.button:focus {
-  outline: none;
 }
 
 .button:disabled {
@@ -639,8 +641,11 @@ html {
 }
 
 .subscription-button:hover,
+.subscription-button:focus,
 .button-apply:hover,
-.hotel-card-button-favorite:hover {
+.hotel-card-button-favorite:hover,
+.hotel-card-button-favorite:focus {
+  outline: none;
   background-color: #68a2ca;
   cursor: pointer;
 }
@@ -732,6 +737,11 @@ html {
 .hotel-card-button-favorite-current:hover {
   background-color: #6c9e42;
   cursor: pointer;
+}
+
+.hotel-card-button-favorite-current:focus {
+  outline: none;
+  background-color: #6c9e42;
 }
 
 .card-button-more {
@@ -1034,6 +1044,11 @@ html {
   font: inherit;
 }
 
+.subscription-field:focus {
+  outline: 2px solid #68a2ca;;
+}
+
+
 /*-------FOOTER--------*/
 
 .contacts-adress {
@@ -1051,6 +1066,7 @@ html {
 
 .contacts-phone:hover,
 .contacts-phone:focus {
+  outline: none;
   color: #756157;
 }
 
@@ -1083,12 +1099,10 @@ html {
   fill: #83b3d3;
 }
 
-.social-icon:hover {
-  fill: #68a2ca;
-}
-
+.social-icon:hover,
 .social-icon:focus {
   outline: none;
+  fill: #68a2ca;
 }
 
 .social-icon:active {
@@ -1118,6 +1132,7 @@ html {
 
 .html-logo:hover,
 .html-logo:focus {
+  outline: none;
   fill: #756157;
 }
 
@@ -1413,6 +1428,10 @@ html {
   border-radius: 50%;
 }
 
+.control-mark:focus-visible {
+  outline: 3px solid #83b3d3;
+}
+
 .control:hover .control-mark {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -1547,6 +1566,8 @@ html {
 .navigation-logo {
   width: 140px;
   margin-right: 30px;
+  position: relative;
+  z-index: 2;
 }
 
 .navigation-item {
@@ -1599,4 +1620,10 @@ html {
   height: 2px;
   background-color: #756257;
   bottom: 0;
+  z-index: 2;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #0000004d;
 }
