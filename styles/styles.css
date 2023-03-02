@@ -1338,6 +1338,7 @@ html {
 }
 
 .range-wrapper-inputs {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 44px;
@@ -1393,6 +1394,27 @@ html {
   border: none;
   padding: 12px 20px;
   appearance: textfield;
+}
+
+.input-placeholder {
+  position: absolute;
+  content: "от";
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 24px;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(170, 170, 170);
+}
+
+.input-placeholder-right {
+  right: 20px;
+}
+
+.input-placeholder-left {
+  right: 160px
 }
 
 .range-input:hover {
