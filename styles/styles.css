@@ -98,22 +98,6 @@ html {
   position: relative;
 }
 
-/* .item-container::before {
-  content: "";
-  position: absolute;
-  width: 60px;
-  display: block;
-  height: 2px;
-  background-color: #ffffff4d;
-  top: 50%;
-  transform: translateX(-50%);
-  right: 170px;
-}
-
-.item-container.item-container-white::before {
-  border: 1px solid #0000004d;
-} */
-
 .card-content-container {
   display: flex;
   flex-wrap: wrap;
@@ -295,21 +279,6 @@ html {
   position: relative;
 }
 
-/* .label-children::before {
-  display: block;
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  left: 62px;
-  top: 3px;
-  background-image: url("../images/information.svg");
-  background-position: center;
-  background-color: #83b3d3;
-  border-radius: 50%;
-  cursor: pointer;
-} */
-
 .field-button {
   padding: 23px 20px;
   border: none;
@@ -326,28 +295,24 @@ html {
   border-radius: 0 4px 4px 0;
 }
 
-.icon-plus {
+.button-icon {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   margin: auto;
-  width: 14px;
-  height: 2px;
   fill: #7561574D;
 }
 
+.icon-plus {
+  width: 14px;
+  height: 2px;
+}
+
 .icon-minus {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
   width: 20px;
   height: 20px;
-  fill: #7561574D;
 }
 
 .icon-minus:hover,
@@ -391,7 +356,7 @@ html {
 }
 
 .field-people-right .check-label-people {
-  margin-right: 46px;
+  margin-right: 20px;
   padding-right: 36px;
 }
 
@@ -673,6 +638,7 @@ html {
 .subscription-button:hover,
 .subscription-button:focus,
 .button-apply:hover,
+.button-apply:focus,
 .hotel-card-button-favorite:hover,
 .hotel-card-button-favorite:focus {
   outline: none;
@@ -710,6 +676,7 @@ html {
 
 .button-reset:focus {
   outline: 3px solid #83B3D3;
+  background: none;
   border-radius: 4px;
 }
 
@@ -1148,8 +1115,11 @@ html {
   fill: #83b3d3;
 }
 
-.social-icon:hover,
-.social-icon:focus {
+.social-link:focus svg {
+  fill: #68a2ca;
+}
+
+.social-icon:hover {
   outline: none;
   fill: #68a2ca;
 }
@@ -1179,8 +1149,11 @@ html {
   fill: #000000;
 }
 
-.html-logo:hover,
-.html-logo:focus {
+.html-link:focus svg {
+  fill: #756157;
+}
+
+.html-logo:hover {
   outline: none;
   fill: #756157;
 }
@@ -1443,8 +1416,13 @@ html {
   background-color: #e6e6e6;
 }
 
-.range-input:focus {
+.range-input:focus:not(:placeholder-shown) {
   outline: 2px solid #000000;
+}
+
+.range-input:focus {
+  outline: 3px solid #68a2ca;
+  background-color: #e6e6e6;
 }
 
 .range-input:active {
@@ -1504,7 +1482,7 @@ html {
 }
 
 .control:hover .control-mark {
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff4d;
 }
 
 .control:focus .control-mark {
@@ -1512,7 +1490,7 @@ html {
 }
 
 .control:active .control-mark {
-  outline: 2px solid #83b3d3;
+  background-color: #ffffff4d;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
