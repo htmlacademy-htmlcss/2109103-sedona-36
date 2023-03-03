@@ -1374,11 +1374,6 @@ html {
   background-color: #e6e6e6;
 }
 
-.range-toggle:active,
-.range-toggle:focus {
-  outline: 2px solid #68a2ca;
-}
-
 .range-input {
   display: block;
   width: 98px;
@@ -1418,15 +1413,6 @@ html {
 
 .range-input:focus:not(:placeholder-shown) {
   outline: 2px solid #000000;
-}
-
-.range-input:focus {
-  outline: 3px solid #68a2ca;
-  background-color: #e6e6e6;
-}
-
-.range-input:active {
-  outline: 3px solid #83b3d3;
 }
 
 .range-input-left {
@@ -1477,20 +1463,12 @@ html {
   border-radius: 50%;
 }
 
-.control-mark:focus-visible {
-  outline: 3px solid #83b3d3;
-}
-
 .control:hover .control-mark {
   background-color: #ffffff4d;
 }
 
-.control:focus .control-mark {
-  outline: 3px solid #83b3d3;
-}
-
-.control:active .control-mark {
-  background-color: #ffffff4d;
+.control-input:focus + .control-mark {
+  outline: 3px solid #68a2ca;
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
@@ -1512,6 +1490,15 @@ html {
   top: 5px;
   right: 5px;
   content: "";
+}
+
+.control-mark:active {
+  outline: none;
+}
+
+.control-input:active + .control-mark {
+  outline: none;
+  background-color: #ffffff4d;
 }
 
 .catalog-filters {
