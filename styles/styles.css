@@ -98,19 +98,21 @@ html {
   position: relative;
 }
 
-.item-container::before {
+/* .item-container::before {
   content: "";
   position: absolute;
   width: 60px;
   display: block;
-  border: 1px solid #ffffff4d;
-  top: 186px;
+  height: 2px;
+  background-color: #ffffff4d;
+  top: 50%;
+  transform: translateX(-50%);
   right: 170px;
 }
 
 .item-container.item-container-white::before {
   border: 1px solid #0000004d;
-}
+} */
 
 .card-content-container {
   display: flex;
@@ -126,6 +128,7 @@ html {
 
 .modal-container {
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   display: flex;
@@ -883,14 +886,31 @@ html {
 }
 
 .advantages-location-title {
+  position: relative;
   width: 175px;
   display: inline-block;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 32px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.advantages-location-title::before {
+  content: "";
+  position: absolute;
+  width: 60px;
+  display: block;
+  height: 2px;
+  background-color: #ffffff4d;
+  bottom: -1px;
+  transform: translateX(90%);
+}
+
+.advantages-location-title.title-black::before {
+  background-color: #0000004d;
 }
 
 .advantages-location-description {
@@ -1002,7 +1022,8 @@ html {
 }
 
 .book-hotel-title {
-  margin: 0;
+  max-width: 620px;
+  margin: 0 auto;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 30px;
@@ -1027,7 +1048,7 @@ html {
   padding: 96px 260px;
   text-align: center;
   background-image: url("../images/background/background-subscribe.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
 }
@@ -1106,6 +1127,7 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
+  align-items: center;
   margin-right: 42px;
 }
 
@@ -1203,6 +1225,7 @@ html {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
+  margin-right: 70px;
 }
 
 .catalog-hotels-select-control:hover {
@@ -1306,7 +1329,6 @@ html {
   padding: 0;
   margin: 0;
   list-style-type: none;
-  margin-left: auto;
 }
 
 .hotel-card {
