@@ -47,7 +47,7 @@ html {
 /*-------CONTAINERS--------*/
 
 .main-container {
-  margin-top: -6px;
+  margin-top: -11px;
   flex-grow: 1;
 }
 
@@ -96,6 +96,10 @@ html {
 .item-container {
   padding: 100px 85px;
   position: relative;
+}
+
+.item-container-white {
+  padding: 112px 85px;
 }
 
 .card-content-container {
@@ -451,6 +455,7 @@ html {
 }
 
 .navigation-user .navigation-link {
+  padding: 22px 12px;
   min-width: 20px;
   min-height: 20px;
 }
@@ -596,6 +601,7 @@ html {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  width: 92px;
 }
 
 .button:hover,
@@ -617,7 +623,7 @@ html {
   display: block;
   border-radius: 4px;
   padding: 8px 50px;
-  width: 350px;
+  width: 276px;
   margin: 0 auto;
   margin-bottom: 96px;
   background-color: #756157;
@@ -633,6 +639,7 @@ html {
   line-height: 36px;
   background-color: #82b3d3;
   color: #ffffff;
+  width: 232px;
 }
 
 .subscription-button:hover,
@@ -803,7 +810,7 @@ html {
   font-size: 22px;
   line-height: 26px;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 89px;
 }
 
 /*-------ADVANTAGES--------*/
@@ -928,10 +935,10 @@ html {
 
 .advantages-company-title {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 39px;
   text-transform: uppercase;
 }
 
@@ -991,10 +998,10 @@ html {
 .book-hotel-title {
   max-width: 620px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-weight: 700;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 28px;
   text-transform: uppercase;
 }
 
@@ -1002,7 +1009,7 @@ html {
   width: 590px;
   display: inline-block;
   margin: 0;
-  margin-bottom: 56px;
+  margin-bottom: 54px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
@@ -1013,6 +1020,7 @@ html {
 
 .subscription {
   padding: 96px 260px;
+  padding-bottom: 104px;
   text-align: center;
   background-image: url("../images/background/background-subscribe.jpg");
   background-size: cover;
@@ -1068,7 +1076,7 @@ html {
 
 .contacts-adress {
   font-size: 40px;
-  line-height: 40px;
+  line-height: 50px;
   text-transform: uppercase;
   font-style: normal;
 }
@@ -1093,15 +1101,16 @@ html {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  margin-left: 30px;
   display: flex;
   align-items: center;
-  margin-right: 42px;
+  margin-right: 40px;
 }
 
 .social-item {
   min-width: 24px;
   min-height: 14px;
-  padding: 12px 14px;
+  padding: 19px 12px;
   position: relative;
 }
 
@@ -1581,6 +1590,7 @@ html {
 
 .main-navigation {
   display: flex;
+  align-items: flex-start;
   padding: 0 70px 0 70px;
   margin: 0 auto;
 }
