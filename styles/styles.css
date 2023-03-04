@@ -388,6 +388,11 @@ button:hover .icon-plus {
   height: 100%;
   color: #83b3d3;
   display: block;
+  fill: #68a2ca;
+}
+
+.tooltip-toggle:hover svg {
+  fill: #68a2ca4d;
 }
 
 .tooltip-text {
