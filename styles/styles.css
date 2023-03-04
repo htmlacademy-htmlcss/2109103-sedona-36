@@ -254,7 +254,7 @@ html {
 }
 
 .check-field:focus-visible {
-  outline: 2px solid #000000;;
+  outline: 2px solid #000000;
 }
 
 .adults-field,
@@ -307,7 +307,7 @@ html {
   bottom: 0;
   left: 0;
   margin: auto;
-  fill: #7561574D;
+  fill: #7561574d;
 }
 
 .icon-plus {
@@ -327,12 +327,12 @@ html {
 
 .icon-minus:focus,
 .icon-plus:focus {
-  outline: 3px solid #82B3D3;
+  outline: 3px solid #82b3d3;
 }
 
 .icon-minus:active,
 .icon-plus:active {
-  fill: #7561574D;
+  fill: #7561574d;
 }
 
 .field-people-container {
@@ -411,7 +411,6 @@ html {
   position: absolute;
   content: "";
   display: block;
-  top: 20px;
   width: 0;
   height: 0;
   top: -10px;
@@ -684,7 +683,7 @@ html {
 }
 
 .button-reset:focus {
-  outline: 3px solid #83B3D3;
+  outline: 3px solid #83b3d3;
   background: none;
   border-radius: 4px;
 }
@@ -767,8 +766,8 @@ html {
 }
 
 .search-form-button:hover,
-.search-form-button:focus  {
-  background-color: #68a2Ca;
+.search-form-button:focus {
+  background-color: #68a2ca;
 }
 
 /*-------HERO_BACKGROUND--------*/
@@ -783,6 +782,9 @@ html {
 }
 
 .inner-hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   background-image: url("../images/background/background-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -933,6 +935,7 @@ html {
 .advantages-company-item {
   padding: 180px 85px 85px 85px;
   width: 400px;
+  position: relative;
 }
 
 .advantages-company-title {
@@ -950,10 +953,6 @@ html {
   color: #333333;
   font-size: 18px;
   line-height: 21px;
-}
-
-.advantages-company-item {
-  position: relative;
 }
 
 .advantages-company-item::before {
@@ -981,14 +980,6 @@ html {
   background-image: url("../images/advantages/advantages-icon-3.svg");
   width: 75px;
   height: 77px;
-}
-
-/*-------ADVANTAGES--------*/
-
-.advantages-company-list,
-.advantages-location-list {
-  margin: 0;
-  padding: 0;
 }
 
 /*-------BOOK_HOTEL--------*/
@@ -1070,7 +1061,7 @@ html {
 }
 
 .subscription-field:focus {
-  outline: 2px solid #68a2ca;;
+  outline: 2px solid #68a2ca;
 }
 
 
@@ -1096,7 +1087,7 @@ html {
 }
 
 .contacts-phone:active {
-  color: #7561574D;
+  color: #7561574d;
 }
 
 .footer-social-list {
@@ -1327,20 +1318,14 @@ html {
 
 /*-------CATALOG_FILTERS--------*/
 
-.inner-hero {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-}
-
 .inner-header-title {
   display: block;
-  margin-bottom: 8px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
   margin: 0;
+  margin-bottom: 8px;
   padding: 0;
 }
 
@@ -1374,7 +1359,7 @@ html {
 }
 
 .toggle-min {
-  top: -8px
+  top: -8px;
 }
 
 .toggle-max {
@@ -1416,7 +1401,7 @@ html {
 }
 
 .input-placeholder-left {
-  right: 160px
+  right: 160px;
 }
 
 .range-input:hover {
