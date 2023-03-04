@@ -67,7 +67,7 @@ html {
 }
 
 .filters-container-left {
-  margin-right: 140px;
+  margin-right: 152px;
   display: flex;
 }
 
@@ -90,6 +90,7 @@ html {
 .catalog-hotels-sorting {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 50px 70px 40px 70px;
 }
 
@@ -461,6 +462,7 @@ html {
 }
 
 .page-footer a {
+  margin-top: 8px;
   text-decoration: none;
   color: #000000;
 }
@@ -690,7 +692,7 @@ html {
 .button-display {
   min-width: 16px;
   min-height: 14px;
-  padding: 16px;
+  padding: 12px;
   color: #000000;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -784,7 +786,7 @@ html {
   background-image: url("../images/background/background-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 30px 70px 70px 70px;
+  padding: 35px 70px 70px 70px;
 }
 
 /*-------WELCOME--------*/
@@ -1182,6 +1184,7 @@ html {
 }
 
 .hotel-card-image {
+  display: block;
   margin-bottom: 16px;
 }
 
@@ -1191,7 +1194,7 @@ html {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin-right: 200px;
+  margin-right: 154px;
 }
 
 .catalog-hotels-select-control {
@@ -1207,7 +1210,7 @@ html {
   background-repeat: no-repeat;
   background-position: right 16px center;
   appearance: none;
-  margin-right: 70px;
+  margin-right: 21px;
 }
 
 .catalog-hotels-select-control:hover {
@@ -1385,13 +1388,13 @@ html {
 
 .range-input {
   display: block;
-  width: 98px;
+  width: 99px;
   font: inherit;
   text-align: left;
   font-weight: 700;
   background-color: #f2f2f2;
   border: none;
-  padding: 12px 20px;
+  padding: 14px 20px;
   appearance: textfield;
 }
 
@@ -1452,6 +1455,7 @@ html {
   position: relative;
   display: block;
   padding-left: 36px;
+  line-height: 23px;
 }
 
 .control-mark {
@@ -1519,6 +1523,7 @@ html {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+  text-transform: capitalize;
 }
 
 .catalog-filters form {
