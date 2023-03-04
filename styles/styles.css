@@ -320,8 +320,8 @@ html {
   height: 20px;
 }
 
-.icon-minus:hover,
-.icon-plus:hover {
+button:hover .icon-minus,
+button:hover .icon-plus {
   fill: #000000;
 }
 
