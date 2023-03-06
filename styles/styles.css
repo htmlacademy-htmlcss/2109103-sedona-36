@@ -323,8 +323,8 @@ html {
   height: 20px;
 }
 
-button:hover .icon-minus,
-button:hover .icon-plus {
+.field-button:hover .icon-minus,
+.field-button:hover .icon-plus {
   fill: #000000;
 }
 
@@ -469,7 +469,6 @@ button:hover .icon-plus {
 }
 
 .page-footer a {
-  margin-top: 8px;
   text-decoration: none;
   color: #000000;
 }
