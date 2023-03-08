@@ -165,10 +165,6 @@ html {
   margin-bottom: 27px;
 }
 
-/* .group-check-in {
-  margin-bottom: 22px;
-} */
-
 .group-check-out {
   margin: 0;
   margin-bottom: 22px;
@@ -376,12 +372,6 @@ html {
   margin-right: 20px;
   padding-right: 36px;
 }
-
-/* .search-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
 
 /*-------TOOLTIP--------*/
 
@@ -606,7 +596,7 @@ html {
 /*-------BUTTONS--------*/
 
 .button {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -741,7 +731,7 @@ html {
 }
 
 .hotel-card-button-favorite {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
@@ -753,7 +743,7 @@ html {
 }
 
 .hotel-card-button-favorite-current {
-  font-family: "PT Sans", sans-serif;
+  font-family: inherit;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
@@ -1249,7 +1239,6 @@ html {
   color: #0000004d;
   border-color: #0000004d;
 }
-
 
 .hotel-card-category {
   color: #333333;
