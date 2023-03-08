@@ -79,7 +79,7 @@ html {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  margin-left: 70px;
+  margin-left: 69px;
   justify-content: flex-end;
 }
 
@@ -91,7 +91,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 70px 40px 70px;
+  padding: 50px 70px 39px 70px;
 }
 
 .item-container {
@@ -161,6 +161,11 @@ html {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  margin: 0;
+  margin-bottom: 27px;
+}
+
+.group-check-out {
   margin: 0;
   margin-bottom: 22px;
 }
@@ -372,8 +377,8 @@ html {
 
 .tooltip {
   position: absolute;
-  margin-top: -23px;
-  margin-left: 60px;
+  margin-top: -24px;
+  margin-left: 57px;
   width: 26px;
   height: 26px;
 }
@@ -405,13 +410,13 @@ html {
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 22px 18px 18px 22px;
   border-radius: 10px;
   display: none;
   width: 216px;
   position: absolute;
   margin-top: 15px;
-  transform: translateX(-44%);
+  transform: translateX(-45%);
   z-index: 1;
 }
 
@@ -562,7 +567,7 @@ html {
   background-color: #82b3d3;
   color: #ffffff;
   text-align: center;
-  padding: 12px 24px;
+  padding: 12px 25px;
   border-radius: 4px;
   outline: none;
 }
@@ -591,6 +596,7 @@ html {
 /*-------BUTTONS--------*/
 
 .button {
+  font-family: inherit;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
@@ -641,13 +647,13 @@ html {
 
 .subscription-button {
   border-radius: 0 4px 4px 0;
-  padding: 8px 38px;
+  padding: 8px 40px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   background-color: #82b3d3;
   color: #ffffff;
-  width: 232px;
+  width: 245px;
 }
 
 .subscription-button:hover,
@@ -670,7 +676,7 @@ html {
   text-transform: uppercase;
   padding: 8px 50px;
   border-radius: 4px;
-  margin-top: 56px;
+  margin-top: 57px;
 }
 
 
@@ -725,24 +731,26 @@ html {
 }
 
 .hotel-card-button-favorite {
+  font-family: inherit;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background-color: #82b3d3;
   width: 140px;
-  padding: 8px 26px;
+  padding: 8px 10px;
   border-radius: 4px;
 }
 
 .hotel-card-button-favorite-current {
+  font-family: inherit;
   text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   background-color: #7db54f;
   width: 140px;
-  padding: 8px 26px;
+  padding: 8px 10px;
   border-radius: 4px;
 }
 
@@ -1030,6 +1038,7 @@ html {
 
 .subscription-catalog {
   padding: 96px 260px;
+  padding-bottom: 104px;
   text-align: center;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -1197,7 +1206,7 @@ html {
 }
 
 .catalog-hotels-select-control {
-  padding: 14px 20px;
+  padding: 12px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   width: 290px;
@@ -1230,7 +1239,6 @@ html {
   color: #0000004d;
   border-color: #0000004d;
 }
-
 
 .hotel-card-category {
   color: #333333;
@@ -1382,7 +1390,7 @@ html {
 
 .range-input {
   display: block;
-  width: 99px;
+  width: 103px;
   font: inherit;
   text-align: left;
   font-weight: 700;
@@ -1444,7 +1452,7 @@ html {
 }
 
 .filter-group-left {
-  margin-right: 70px;
+  margin-right: 66px;
 }
 
 .control {
@@ -1532,7 +1540,7 @@ html {
 
 .catalog-filter-price {
   display: grid;
-  grid-template-columns: repeat(2, 140px);
+  grid-template-columns: repeat(2, 144px);
 }
 
 .range {
@@ -1572,7 +1580,7 @@ html {
 }
 
 .pagination-item:not(:last-child) {
-  margin-right: 8px;
+  margin-right: 6px;
 }
 
 .pagination-link-double {
@@ -1581,7 +1589,7 @@ html {
 
 .pagination-item-ellipsis {
   display: block;
-  padding: 16px 22px;
+  padding: 16px 24px;
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
