@@ -255,10 +255,6 @@ html {
   background-color: #e6e6e6;
 }
 
-.check-field:focus {
-  outline: 3px solid #83b3d3;
-}
-
 .check-field:focus-visible {
   outline: 2px solid #000000;
 }
@@ -540,10 +536,6 @@ html {
   color: #ffffff99;
 }
 
-.breadcrubms-link-text:focus {
-  outline: none;
-}
-
 .breadcrubms-link-text:active {
   color: #ffffff4d;
 }
@@ -569,7 +561,6 @@ html {
   text-align: center;
   padding: 12px 25px;
   border-radius: 4px;
-  outline: none;
 }
 
 .pagination-link:hover {
@@ -620,7 +611,6 @@ html {
 
 .button:hover,
 .button:focus {
-  outline: none;
   background-color: #615048;
 }
 
@@ -662,7 +652,6 @@ html {
 .button-apply:focus,
 .hotel-card-button-favorite:hover,
 .hotel-card-button-favorite:focus {
-  outline: none;
   background-color: #68a2ca;
   cursor: pointer;
 }
@@ -718,7 +707,6 @@ html {
 
 .button-display:focus {
   border-color: #68a2ca;
-  outline: none;
 }
 
 .button-display:active {
@@ -760,7 +748,6 @@ html {
 }
 
 .hotel-card-button-favorite-current:focus {
-  outline: none;
   background-color: #6c9e42;
 }
 
@@ -792,6 +779,7 @@ html {
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, center;
+  background-color: #83b3d3a8;
   margin-bottom: 70px;
   position: relative;
 }
@@ -803,6 +791,7 @@ html {
   background-image: url("../images/background/background-catalog.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #83b3d3a8;
   padding: 35px 70px 70px 70px;
 }
 
@@ -830,6 +819,7 @@ html {
   line-height: 26px;
   margin: 0;
   margin-bottom: 89px;
+  color: #333333;
 }
 
 /*-------ADVANTAGES--------*/
@@ -937,6 +927,7 @@ html {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
+  color: #333333;
 }
 
 /*-------ADVANTAGES_COMPANY--------*/
@@ -1033,6 +1024,7 @@ html {
   background-image: url("../images/background/background-subscribe.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #83b3d3a8;
   color: #ffffff;
 }
 
@@ -1059,6 +1051,10 @@ html {
   margin-bottom: 54px;
   font-size: 22px;
   line-height: 26px;
+}
+
+.description-white {
+  color: #333333;
 }
 
 .subscription-form {
@@ -1098,7 +1094,6 @@ html {
 
 .contacts-phone:hover,
 .contacts-phone:focus {
-  outline: none;
   color: #756157;
 }
 
@@ -1139,7 +1134,6 @@ html {
 }
 
 .social-icon:hover {
-  outline: none;
   fill: #68a2ca;
 }
 
@@ -1227,7 +1221,6 @@ html {
 }
 
 .catalog-hotels-select-control:focus {
-  outline: none;
   border-color: #68a2ca;
 }
 
