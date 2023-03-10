@@ -1115,7 +1115,7 @@ html {
 .social-item {
   min-width: 24px;
   min-height: 14px;
-  padding: 19px 12px;
+  padding: 14px 12px;
   position: relative;
 }
 
@@ -1129,11 +1129,17 @@ html {
   fill: #83b3d3;
 }
 
+.social-link {
+  display: block;
+  height: 20px;
+  width: 24px;
+}
+
 .social-link:focus svg {
   fill: #68a2ca;
 }
 
-.social-icon:hover {
+.social-link:hover svg {
   fill: #68a2ca;
 }
 
@@ -1162,12 +1168,17 @@ html {
   fill: #000000;
 }
 
+.html-link {
+  display: block;
+  height: 54px;
+  width: 115px;
+}
+
 .html-link:focus svg {
   fill: #756157;
 }
 
-.html-logo:hover {
-  outline: none;
+.html-link:hover svg {
   fill: #756157;
 }
 
